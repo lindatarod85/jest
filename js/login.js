@@ -3,9 +3,9 @@ import { saveToken, saveUser } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
 import createMenu from "./components/common/createMenu.js";
 
-createMenu();
+//createMenu();
 
-const form = document.querySelector("form");
+/*const form = document.querySelector("form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const message = document.querySelector(".message-container");
@@ -15,7 +15,7 @@ form.addEventListener("submit", submitForm);
 function submitForm(event) {
   event.preventDefault();
 
-  message.innerHTML = "";
+message.innerHTML = "";
 
   const usernameValue = username.value.trim();
   const passwordValue = password.value.trim();
@@ -26,7 +26,7 @@ function submitForm(event) {
 
   doLogin(usernameValue, passwordValue);
 }
-
+*/
 export async function doLogin(username, password) {
   const url = baseUrl + "auth/local";
 

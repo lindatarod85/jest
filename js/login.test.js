@@ -1,6 +1,7 @@
-import {doLogin} from "../login.js";
+import {doLogin} from "./login.js";
 
-describe("doLogin", () => {
+
+/*describe("doLogin", () => {
     it ("Should fetch the API", async () =>{
         global.fetch = jest.fn(() => Promise.resolve({}));
     
@@ -8,7 +9,7 @@ describe("doLogin", () => {
     
         expect.assertions(1);
     });
-    });
+    });*/
 
 
 
@@ -26,9 +27,9 @@ describe("doLogin", () => {
 
 
       /* Tried this*/
-      /*describe("doLogin", () => {
+      describe("doLogin", () => {
         it("should fetch the API", async () => {
           const data = await doLogin();
           expect(data).toHaveBeenCalled();
         })
-      })*/
+      })
